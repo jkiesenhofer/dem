@@ -1,0 +1,7 @@
+#!/bin/sh
+cd ${0%*/*} || exit 1
+
+rm -rf processor*
+foamListTimes -rm
+rm -r VTK/
+rm -rf 0
