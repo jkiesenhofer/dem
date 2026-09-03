@@ -2,8 +2,8 @@ content = r"""/*--------------------------------*- C++ -*-----------------------
 | =========                 |                                                 |
 | \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
 |  \\    /   O peration     | Version:  v2412                                 |
-|   \\  /    A nd           | Website:  www.openfoam.com                  |
-|    \\/     M manipulation |                                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
 \*---------------------------------------------------------------------------*/
 FoamFile
 {
@@ -21,15 +21,26 @@ defaultFieldValues
 
 regions
 (
+    /*boxToCell
+    {
+        box (0 0 0) (0.5 0.5 0.45);
+        fieldValues
+        (
+            volScalarFieldValue alpha.water 1
+        );
+    }*/
+
     sphereToCell
     {
-        centre (0.3 0.3 0.65);
-        radius 0.05;
+        centre (0.0025 0.0025 0.003);
+        radius 0.001; // Adjust this radius value as needed
         fieldValues
         (
             volScalarFieldValue alpha.water 0
         );
     }
+
+
 );
 
 
