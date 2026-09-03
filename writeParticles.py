@@ -27,7 +27,7 @@ positionParticles
 
     orderedInfo
     {
-        distance   0.1;           // minimum space between centers of particles
+        distance   0.0001;           // minimum space between centers of particles
         
         numPoints  6;          // number of particles in the simulation 
         
@@ -38,11 +38,11 @@ positionParticles
 
     cylinderInfo                    // cylinder for positioning particles 
     {
-        p1     (0.25 0.25 0.6);    // lower corner point of the box 
+        p1     (0.004 0.004 0.012);    // lower corner point of the box 
         
-        p2     (0.35 0.35  0.7);    // upper corner point of the box 
+        p2     (0.003 0.003  0.007);    // upper corner point of the box 
         
-        radius 0.1;               // radius of cylinder 
+        radius 0.001;               // radius of cylinder 
     }
 }
 
