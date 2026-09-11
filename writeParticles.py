@@ -42,7 +42,7 @@ positionParticles
         
         p2     (0.0005 0.0005 0.0005);    // upper corner point of the box 
         
-        radius 0.001;               // radius of cylinder 
+        radius 0.0001;               // radius of cylinder 
     }
 }
 
