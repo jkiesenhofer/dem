@@ -32,7 +32,7 @@ regions
 
     sphereToCell
     {
-        centre (0.0025 0.0025 0.003);
+        centre (0.00 0.00 0.00);
         radius 0.001; // Adjust this radius value as needed
         fieldValues
         (
