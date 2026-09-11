@@ -29,7 +29,7 @@ positionParticles
     {
         distance   0.0001;           // minimum space between centers of particles
         
-        numPoints  6;          // number of particles in the simulation 
+        numPoints  36;          // number of particles in the simulation 
         
         axisOrder  (z x y);         // axis order for filling the space with particles
     }
