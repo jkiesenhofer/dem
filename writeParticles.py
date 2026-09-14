@@ -11,7 +11,7 @@ setFields
 {
 	defaultValue
 	{
-		velocity 		realx3 	(0 0 0); 	// linear velocity (m/s)
+		velocity 		realx3 	(0 0 -3); 	// linear velocity (m/s)
 		rVelocity 		realx3 	(0 0 0);  	// rotational velocity (rad/s)
 		shapeName 		word	sph1; 		// name of the particle shape
 	}
@@ -27,7 +27,7 @@ positionParticles
 
     orderedInfo
     {
-        distance   0.0001;           // minimum space between centers of particles
+        distance   0.0008;           // minimum space between centers of particles
         
         numPoints  1;          // number of particles in the simulation 
         
@@ -40,7 +40,7 @@ positionParticles
     {
         p1     (-0.000 -0.000 0.001);    // lower corner point of the box 
         
-        p2     (0.000 0.000 0.0012);    // upper corner point of the box 
+        p2     (0.000 0.000 0.003);    // upper corner point of the box 
         
         radius 0.001;               // radius of cylinder 
     }
