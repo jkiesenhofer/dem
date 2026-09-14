@@ -38,7 +38,7 @@ positionParticles
 
     cylinderInfo                    // cylinder for positioning particles 
     {
-        p1     (-0.000 -0.000 0.001);    // lower corner point of the box 
+        p1     (-0.000 -0.000 0.002);    // lower corner point of the box 
         
         p2     (0.000 0.000 0.003);    // upper corner point of the box 
         
