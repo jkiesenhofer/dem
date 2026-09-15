@@ -10,6 +10,7 @@ export OMP_NUM_THREADS=2
 python3 writeField.py
 python3 writeParticles.py
 python3 writeMesh.py
+python3 writeControl.py
 
 echo "\n<--------------------------------------------------------------------->"
 echo "1) Running blockMesh"
