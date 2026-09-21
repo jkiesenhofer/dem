@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DB_FILE="openfoam_data.db"
-URL="http://jkiesenhofer.bplaced.net/db/openfoam_data.db"
+DB_FILE="flotation_simulation.db"
+URL="http://jkiesenhofer.bplaced.net/db/flotation_simulation.db"
 
 # 1. Download the database file if it isn't already local
 if [ ! -f "$DB_FILE" ]; then
@@ -25,9 +25,9 @@ sqlite3 "$DB_FILE" <<EOF
 -- Show all tables in the database
 .tables
 
--- View the schema of the field_data table
-.schema field_data
+-- View the schema of the simulation_data table
+.schema simulation_data
 
--- Show the entire dataset
-SELECT * FROM field_data;
+-- Show a preview of the dataset (limited to avoid terminal flooding)
+SELECT * FROM simulation_data LIMIT 20;
 EOF
