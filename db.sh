@@ -29,5 +29,5 @@ sqlite3 "$DB_FILE" <<EOF
 .schema simulation_data
 
 -- Show a preview of the dataset (limited to avoid terminal flooding)
-SELECT * FROM simulation_data LIMIT 20;
+SELECT * FROM simulation_data LIMIT 2000;
 EOF
