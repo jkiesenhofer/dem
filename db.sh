@@ -12,18 +12,22 @@ else
     echo "Database file '$DB_FILE' already exists locally."
 fi
 
-# 2. Run SQLite queries using a heredoc
+# 2. Run SQLite queries
 echo "-----------------------------------"
 echo "Executing SQLite queries..."
 echo "-----------------------------------"
 
 sqlite3 "$DB_FILE" <<EOF
+-- Enable column headers and neat column formatting
+.mode column
+.headers on
+
 -- Show all tables in the database
 .tables
 
--- View the schema of the particle_states table
-.schema particle_states
+-- View the schema of the field_data table
+.schema field_data
 
--- Run a query to find the maximum step
-SELECT MAX(step) FROM particle_states;
+-- Show the entire dataset
+SELECT * FROM field_data;
 EOF
